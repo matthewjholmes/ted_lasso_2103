@@ -1,13 +1,12 @@
 class Player
 attr_reader :name,
-            :position
+            :position,
             :salary
 
   def initialize(attributes)
-  end
-
-  def attributes
-    attributes = {}
+    @name = attributes[:name]
+    @position = attributes[:position]
+    @salary = attributes[:salary]
   end
 
 end
